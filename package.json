@@ -1,0 +1,21 @@
+{
+  "name": "jarvis-ktfootball",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack -d --watch",
+    "build": "webpack -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.coding.net:sevenbanana/jarvis.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mithril": "^1.1.1",
+    "webpack": "^2.5.1"
+  }
+}
