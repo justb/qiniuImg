@@ -4,7 +4,7 @@ var request = {
     request: function (params) {
         var def = $.Deferred()
         NProgress.start()
-        params.url = params.url + '?auth_token=' + localStorage.getItem('auth_token')
+        // params.url = params.url + '?auth_token=' + localStorage.getItem('auth_token')
         m.request(params).then(function (result) {
 
             def.resolve(result)
@@ -12,9 +12,9 @@ var request = {
         }).catch(function (error) {
 
             def.reject(error)
-            if (error.error === 'Invalid token') {
-                m.route.set('/login')
-            }
+            // if (error.error === 'Invalid token') {
+            //     m.route.set('/login')
+            // }
             NProgress.done()
         })
 

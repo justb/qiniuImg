@@ -261,14 +261,14 @@ FileProgress.prototype.setComplete = function(up, info) {
         // if (!/imageView/.test(url)) {
         //     url += imageView
         // }
-        $(img).attr({'src':url,'height':'100px'});
-
-        var height_space = 340;
-        $(img).on('load',function(){
-            $('img').attr({'src':url,'height':'100px'});
-        }).on('error', function() {
-            $('img').attr({'src':url,'height':'100px'});
-        });
+        
+        showImg.attr({'src':url,'height':'100px'});
+        // var height_space = 340;
+        // $(img).on('load',function(){
+        //     showImg.attr({'src':url,'height':'100px'});
+        // }).on('error', function() {
+        //     showImg.attr({'src':url,'height':'100px'});
+        // });
         // $(img).on('load', function() {
         //     showImg.attr('src', url);
 
